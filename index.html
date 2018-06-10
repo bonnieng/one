@@ -68,7 +68,7 @@ nav a {
       
 }
 	
-.hide{
+#hide{
 	display:none;}	
 	
 .fadein img {
@@ -127,12 +127,11 @@ top:0px;
       nav {
        
         font-size: 100 vw;
-      }
-	
-hide{
-	display:block;
-	}
-    }   
+	}}
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #hide{ display: block; }  /* show it on smaller screen */
+}	
+ 
 	
 	
 </style>
@@ -142,8 +141,8 @@ hide{
  <img src="https://cortex.persona.co/t/original/i/c95a30e44d697e9aa6a3763e3241e42669b8f19173442da37b9727c96f0165a3/bnlogo1-01.png" alt="logo" style="padding-left:25px;padding-top: 20px;left:0;top:0;
   position:fixed;width:115px;">
   </a>
-
-<div class="fadein hide">
+<div id="hide">
+<div class="fadein">
 <div style="position: relative;">
   
     <img id="f3" style="position: relative;"  
@@ -155,6 +154,7 @@ hide{
      
     </div>
   </div>
+	</div>
 	
 <link href="https://fonts.googleapis.com/css?family=Montserrat:320" rel="stylesheet">
 <nav>
