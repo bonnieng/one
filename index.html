@@ -68,6 +68,58 @@ nav a {
       
 }
 	
+.fadein img {
+    position: center;
+   
+    border-radius:50%;
+    max-width: 100%;
+
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration:6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+position:absolute;
+left:0px;
+top:0px;
+}
+
+    
+#f2 {
+position:absolute; 
+left:0px;
+top:0px;
+    -webkit-animation-delay: -4s;
+    }
+    
+    
+#f3 {
+position:absolute;
+left:0px;
+top:0px;
+    -webkit-animation-delay: -2s;
+}
+
+	
 @media only screen and (max-width: 500px) {
       nav {
        
