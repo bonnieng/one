@@ -75,9 +75,6 @@ nav a {
       }
     }   
 	
-@media (min-width: 480px) {
-    background-image: url("https://cortex.persona.co/t/original/i/00bea4ab0a0198731f80d5db4d23f5ea76877c2b512cee9a11657637fa664f53/hangersall_smaller.jpg");
-}
 	
 </style>
 	
@@ -121,7 +118,13 @@ $("#third").hover(function () {
     
 
 });
-						
+
+var w = window.innerWidth;
+var ow = window.outerWidth; //toolbars and status, etc...
+
+if(w > 1024) {
+   //Skrollr
+}
 
 </script>	
 
