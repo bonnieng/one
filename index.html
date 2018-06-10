@@ -168,10 +168,16 @@ top:0px;
 </body>
 	
 <script>
-$(document).ready(function() {
-        var mobile = (/iphone|ipod|android|blackberry|mini/i.test(navigator.userAgent.toLowerCase()));  
-        $('#hide').css('display', 'none');
-    });
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+if (mobile) {
+    $(document).ready(function() {
+         $('#hide').css('display', 'none');
+    });          
+} else {
+    $(document).ready(function() {
+         $('#hide').css('display', 'block');
+    });   
+} 
 	
 if(window.innerWidth >= 400){
 	
