@@ -129,9 +129,7 @@ top:0px;
        
         font-size: 100 vw;
 	}}
-@media screen and (min-width: 0px) and (max-width: 400px) {
-  #hide{ display: block; }  /* show it on smaller screen */
-}	
+/*@media screen and (min-width: 0px) and (max-width: 400px) {#hide{ display: block; }  /* show it on smaller screen }	*/
  
 	
 	
@@ -169,6 +167,10 @@ top:0px;
 </body>
 	
 <script>
+if(window.innerWidth <= 400){
+function start() {
+    document.getElementById('hide').style.display='block';
+}}
 if(window.innerWidth >= 400){
 	
   $("#first").hover(function () {
