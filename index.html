@@ -67,8 +67,26 @@ nav {
 }
 
 nav a {
-      
+text-decoration:none;
+color:gray;
+cursor: default; 
+
+-webkit-column-width: 150px;
+  -moz-column-width: 150px;
+  column-width: 150px;
 }
+	
+@media screen and (max-width: 300px) {
+    table td:nth-of-type(3) {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    table td:nth-of-type(4) {
+        display: none;
+    }
+}
+
 	
 #hide{
 	display:none;}	
@@ -180,6 +198,26 @@ body{
 <nav>
  <a id="first" href="https://bonita.persona.co/Andorra">Link 1</a>
  &nbsp  &nbsp
+ <a id="second">Link 1</a>
+ &nbsp  &nbsp
+ <a id="third">Link 1</a>
+&nbsp  &nbsp
+ <a id="second">Link 1</a>
+ &nbsp  &nbsp
+ <a id="third">Link 1</a>
+&nbsp  &nbsp
+ <a id="second">Link 1</a>
+ &nbsp  &nbsp
+ <a id="third">Link 1</a>
+&nbsp  &nbsp
+ <a id="second">Link 1</a>
+ &nbsp  &nbsp
+ <a id="third">Link 1</a>
+&nbsp  &nbsp
+ <a id="second">Link 1</a>
+ &nbsp  &nbsp
+ <a id="third">Link 1</a>
+&nbsp  &nbsp
  <a id="second">Link 1</a>
  &nbsp  &nbsp
  <a id="third">Link 1</a>
