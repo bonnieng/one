@@ -45,10 +45,12 @@ h1{
     }    
 </style>
 <body>
+<div id = "hide">
 <a href="index.html">
- <img src="logo.png" alt="logo" style="padding-left:25px;padding-top: 20px;left:0;top:0;
+<img src="logo.png" alt="logo" style="padding-left:25px;padding-top: 20px;left:0;top:0;
   position:fixed;width:150px;">
   </a>
+</div>
 <center>
 <br>
 <br>
@@ -126,7 +128,7 @@ h1{
 var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 if (mobile) {
     $(document).ready(function() {
-         $('#hide').css('display', 'block');
+         $('#hide').css('width', '150px');
 	
     });  
 } else {
