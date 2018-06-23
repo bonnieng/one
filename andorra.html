@@ -122,3 +122,16 @@ h1{
 <img style="width:100%;" src="andorra_3.jpg">
 </center>
 </body>
+<script>
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+if (mobile) {
+    $(document).ready(function() {
+         $('#hide').css('display', 'block');
+	
+    });  
+} else {
+    $(document).ready(function() {
+         
+    });   
+} 
+</script>
