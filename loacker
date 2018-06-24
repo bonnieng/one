@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+</head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+
+<style>
+body{
+	 opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	
+  width: 100%;
+  height: 100vh;
+ }
+ @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+h1{
+	width: 60%;
+	font-size: 2vw;
+   line-height: 1.6;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+     font-weight: 200;
+     color:gray;
+     padding-left:auto;
+     padding-right:auto;
+}
+@media (max-width: 800px) {
+      h1 {
+        width: 80%;
+        font-size: 6vw;
+      }
+    }    
+</style>
+<body>
+
+<a href="index.html">
+
+	
+ <img src="logo.png" alt="logo" style="padding-left:25px;padding-top: 20px;left:0;top:0;
+  position:fixed;width:115px;">
+  </a>
+
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Loacker, an Italian company that produces premium wafers and chocolate, wanted a new design for their shipping boxes in the U.S. They were looking for a design that would highlight the great taste and healthy, fresh ingredients of their products. They also did not want their product to look too expensive. The senior designer created the top of this box while I designed the sides and bottom.&nbsp;
+</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<img style="width:100%;" src="loacker.jpg">
+<img style="width:100%;" src="loacker_box.jpg">
+
+</center>
+</body>
+<script>
+</script>
