@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+</head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+
+<style>
+body{
+	 opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	
+  width: 100%;
+  height: 100vh;
+ }
+ @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+h1{
+	width: 60%;
+	font-size: 2vw;
+   line-height: 1.6;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+     font-weight: 200;
+     color:gray;
+     padding-left:auto;
+     padding-right:auto;
+}
+
+img {
+width:100%;}
+
+@media (max-width: 800px) {
+      h1 {
+        width: 80%;
+        font-size: 6vw;
+      }
+    }
+    
+.image2{
+   display: none;
+}
+
+@media only screen and (max-width: 500px){ //some value
+   .image1{
+     display: none;
+   }
+
+   .image2{
+     display: block;
+   }
+}    
+</style>
+<body>
+
+<a href="index.html">
+<img src="logo.png" alt="logo" style="padding-left:25px;padding-top: 20px;left:0;top:0;
+  position:fixed;width:115px;">
+  </a>
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>Ztron is the online haven for astrology enthusiasts. There are two logotypes for this website. The first is designed to emulate the style of the 1990s. The second updates the first for a more modern look. &nbsp;
+</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="oldztron.jpg">
+<img src="oldztron_1.jpg">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>The new logotype is lighter in weight and color to mirror more contemporary design. The moon of the old logotype is transformed into a solar eclipse, indicating the passing of time since Ztron's founding and the importance of timing in astrology.  &nbsp;
+</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="newztron.png">
+<img src="newztron_1.jpg">
+<img src="newztronmac.jpg">
+
+
+</center>
+</body>
