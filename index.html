@@ -201,10 +201,10 @@ body{
 
 <div class="container">	
 	
-
+<p id="me"></p>
 	
 <div id="hide">
-<p id="me"></p>
+
 <div class="fadein">
 <div style="position: relative; z-index:-100; width: 100%; height: vh">
   
@@ -257,6 +257,7 @@ if (mobile) {
 	 $('body').css('border','0px');   
 	 $('nav').css('margin-left','30px'); 
 	 $('nav a').css('line-height','1.25'); 
+	   $('#me').css('display','none'); 
     });  
 } else {
     $(document).ready(function() {
