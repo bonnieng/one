@@ -260,11 +260,12 @@ if (mobile) {
     });  
 } else {
     $(document).ready(function() {
-         $('#hide').css('display', 'none','me');
+         $('#hide').css('display', 'none');
+	  $('#me').css('display','block'); 
     });   
 } 
 
-document.getElementById("me").innerHTML = 'Hi there! I am a New York-based designer specializing in packaging and branding. Illustration is my passion and I love web design as well. In fact, this portfolio was built from scratch ;)'     
+document.getElementById("me").innerHTML = 'Hello! I am a New York-based designer specializing in packaging and branding. Illustration is my passion and I love web design as well.'     
 	
 if(window.innerWidth >= 400){
 	
