@@ -253,14 +253,14 @@ body{
 var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 if (mobile) {
     $(document).ready(function() {
-         $('#hide').css('display', 'block','me');
+         $('#hide').css('display', 'block');
 	 $('body').css('border','0px');   
 	 $('nav').css('margin-left','30px'); 
 	 $('nav a').css('line-height','1.25'); 
     });  
 } else {
     $(document).ready(function() {
-         $('#hide').css('display', 'none');
+         $('#hide').css('display', 'none','me');
     });   
 } 
 
