@@ -51,17 +51,54 @@ body {
 	}
 }
 	
-@keyframes fadeInOpacityfadeOut {
+@keyframes me {
 	0% {
 		opacity: 0;
 	}
-	50% {
+	20%{
+	opacity:1;}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+	
+@keyframes me2 {
+	0% {
+		opacity: 0;
+	}
+	20%{
+	opacity:0;}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+	
+@keyframes me3 {
+	0% {
+		opacity: 0;
+	}
+	20%{
+	opacity:0;}
+	40% {
+		opacity: 0;
+	}
+	60% {
 		opacity: 1;
 	}
 	100% {
 		opacity: 0;
 	}
 }
+
 
 
 
@@ -141,7 +178,7 @@ text-transform: uppercase;
     letter-spacing: 10 px;
 	font-size: 20 vw;
 	position:relative;
-	animation-name: fadeInOpacityfadeOut;
+	animation-name: me;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 2s;
@@ -154,7 +191,7 @@ text-transform: uppercase;
     letter-spacing: 10 px;
 	font-size: 20 vw;
 	position:relative;
-	animation-name: fadeInOpacityfadeOut;
+	animation-name: me2;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 4s;
@@ -168,7 +205,7 @@ text-transform: uppercase;
     letter-spacing: 10 px;
 	font-size: 20 vw;
 	position:relative;
-	animation-name: fadeInOpacityfadeOut;
+	animation-name: me3;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 6s;
