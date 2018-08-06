@@ -144,8 +144,36 @@ text-transform: uppercase;
 	animation-name: fadeInOpacityfadeOut;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 10s;
+	animation-duration: 2s;
 	opacity: 0;
+	}
+	
+#me2 {	line-height:2;
+text-transform: uppercase;
+     font-family: 'Muli', sans-serif;
+    letter-spacing: 10 px;
+	font-size: 20 vw;
+	position:relative;
+	animation-name: fadeInOpacityfadeOut;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	opacity: 0;
+-webkit-animation-delay: -2s;
+	}
+	
+#me3 {	line-height:2;
+text-transform: uppercase;
+     font-family: 'Muli', sans-serif;
+    letter-spacing: 10 px;
+	font-size: 20 vw;
+	position:relative;
+	animation-name: fadeInOpacityfadeOut;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	opacity: 0;
+-webkit-animation-delay: -4s;
 	}
 	
 
@@ -230,7 +258,17 @@ body{
 <div class="container">	
 	
 <div id="me">
-	<p>Hello! I am a New York-based designer specializing in packaging, illustration, and branding.
+	<p>Hello! 
+	</p>
+	</div>
+	
+<div id="me2">
+	<p>I am a New York-based designer
+	</p>
+	</div>
+	
+<div id="me3">
+	<p>specializing in packaging, illustration, and branding.
 	</p>
 	</div>
 	
@@ -288,12 +326,16 @@ if (mobile) {
 	 $('body').css('border','0px');   
 	 $('nav').css('margin-left','30px'); 
 	 $('nav a').css('line-height','1.25'); 
-	   $('#me').css('display','none'); 
+	 $('#me').css('display','none'); 
+	 $('#me2').css('display','none'); 
+	 $('#me3').css('display','none'); 
     });  
 } else {
     $(document).ready(function() {
          $('#hide').css('display', 'none');
-	  $('#me').css('display','block'); 
+	 $('#me').css('display','block'); 
+	 $('#me2').css('display','block'); 
+	 $('#me3').css('display','block'); 
     });   
 } 
 
