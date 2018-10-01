@@ -242,7 +242,7 @@ white-space: nowrap;
        $(window).on('scroll', function () {
          var st = $(this).scrollTop();
          myElement.css({
-            'opacity': st / 360 -1
+            'opacity': 1 - st / 600
          });
       });
     });
