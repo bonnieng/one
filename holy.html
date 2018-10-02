@@ -125,7 +125,45 @@ Holy Schmitt's, a family-owned horseradish company, wanted to redesign their pro
 <img style="width:80%;" src="holyposter_1.jpg" class="hideme">
 <p><span style="font-size:25px; font-family: 'Work Sans', sans-serif;"This promotional poster was created by the senior designer, and the logo was created by me. </span></p>
 
+<nav>
+<div style="font-family: 'Muli', sans-serif;">
+ <a href="loacker.html">Loacker</a>
+ <a href="holy.html">Holy Schmitt's</a>
+ <a href="delicias.html">Delicias Andinas</a>
+ <a href="ghp.html">Gourmet Home Products</a>
+ <a href="trice.html">Trice</a>
+ <a href="msi.html">Mary's Secret Ingredients</a>
+ <a href="lvi.html">Life Vest Inside</a>
+ <a href="tapout.html">Tapout</a>
+ <a href="kc.html">Kelly + Chang</a>
+ <a href="andorra.html">Andorra</a>
+ <a href="ztron.html">Ztron</a>
+</div>
+</nav>
 </center>
 </body>
 <script>
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var top_of_object = $(this).position().top + $(this).outerHeight();
+            var top_of_window = $(window).scrollTop() + $(window).height()*1.75;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( top_of_window > top_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
 </script>
