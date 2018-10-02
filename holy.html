@@ -103,12 +103,9 @@ white-space: nowrap;
 <body>
 
 <a href="index.html">
-
-<img src="bnlogo.png" alt="logo" style="padding-left:35px;padding-top: 20px;left:0;top:0;
-  position:fixed;width:75px; onmouseover="this.src='bnlogo2.png';" onmouseout="this.src='bnlogo.png';">
-												      
-
-  </a>
+<img style="padding-left:35px;padding-top: 20px;left:0;top:0;
+  position:fixed;width:75px;" src="bnlogo.png"onmouseover="this.src='bnlogo2.png';" onmouseout="this.src='bnlogo.png';">
+</a>
 
 <center>
 
@@ -152,7 +149,7 @@ $(document).ready(function() {
         $('.hideme').each( function(i){
             
             var top_of_object = $(this).position().top + $(this).outerHeight();
-            var top_of_window = $(window).scrollTop() + $(window).height()*1.75;
+            var top_of_window = $(window).scrollTop() + $(window).height()*1;
             
             /* If the object is completely visible in the window, fade it it */
             if( top_of_window > top_of_object ){
