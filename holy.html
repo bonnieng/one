@@ -34,7 +34,7 @@ h1{
 	font-size: 15px;
    line-height: 1.6;
    text-align: center;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Work Sans', sans-serif;
      font-weight: 300;
      color:black;
      padding-left:auto;
@@ -47,62 +47,83 @@ h1{
         width: 80%;
 /*         font-size: 6vw; */
       }
-    }    
+    } 
+
+nav{
+margin: 0 auto;
+   padding:60px;
+    bottom: 0;
+/*     width: 90%; */
+max-width:100%;
+/*     text-align: center; */
+ 
+ 
+    background-color: #FFF;
+	
+  display: flex;
+  align-items: center;
+  justify-content: center
+	
+   }
+   
+nav a {
+text-decoration:none;
+color:black;
+cursor: default; 
+	
+line-height:2;
+text-transform: uppercase;
+     font-family: 'Muli', sans-serif;
+    font-size: 12px !important;
+    font-weight:bold;
+	
+white-space: nowrap;	
+/* -webkit-column-width: 150px;
+  -moz-column-width: 150px;
+  column-width: 150px; */
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.hideme
+{
+    opacity:0;
+}
+@media screen and (max-width: 300px) {
+    table td:nth-of-type(3) {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    table td:nth-of-type(4) {
+        display: none;
+    }
+}
 </style>
 <body>
 
 <a href="index.html">
 
-	
- <img src="bnlogo.png" alt="logo" style="padding-left:35px;padding-top: 20px;left:0;top:0;
-  position:fixed;width:75px;">
+<img src="bnlogo.png" alt="logo" style="padding-left:35px;padding-top: 20px;left:0;top:0;
+  position:fixed;width:75px; onmouseover="this.src='bnlogo2.png';" onmouseout="this.src='bnlogo.png';">
+												      
+
   </a>
 
 <center>
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
 
-<h1>Holy Schmitt's, a family-owned horseradish company, wanted to redesign their product packaging for a more modern look that would appeal to health-conscious individuals. Their horseradish is still grown on their very own farms. &nbsp;
+
+<h1><span style="font-size:25px;"> H O L Y  S C H M I T T ' S </span>
+<br>			 
+<br>
+Holy Schmitt's, a family-owned horseradish company, wanted to redesign their product packaging for a more modern look that would appeal to health-conscious individuals. Their horseradish is still grown on their very own farms. &nbsp;
 </h1>
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
-
-<img style="width:100%;" src="holy.jpg">
-<img style="width:100%;" src="holy_01.png">
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
 
 
-<h1>This promotional poster was created by the senior designer, and the logo was created by me. &nbsp;</h1>
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
-<img style="width:80%;" src="holyposter_1.jpg">
+<img style="width:100%;" src="holy.jpg" class="hideme">
+<img style="width:100%;" src="holy_01.png" class="hideme">
+<img style="width:80%;" src="holyposter_1.jpg" class="hideme">
+<p><span style="font-size:25px; font-family: 'Work Sans', sans-serif;"This promotional poster was created by the senior designer, and the logo was created by me. </span></p>
 
 </center>
 </body>
