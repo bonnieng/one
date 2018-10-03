@@ -164,7 +164,7 @@ $(document).ready(function() {
         $('.hideme').each( function(i){
             
             var top_of_object = $(this).position().top + $(this).outerHeight();
-            var top_of_window = $(window).scrollTop() + $(window).height()*0.5;
+            var top_of_window = $(window).scrollTop() + $(window).height()*0.25;
             
             /* If the object is completely visible in the window, fade it it */
             if( top_of_window > top_of_object ){
