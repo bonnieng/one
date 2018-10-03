@@ -6,8 +6,10 @@
 
 <head>
 <meta charset="utf-8">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+
 </head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
 <style>
 body{
@@ -33,7 +35,7 @@ h1{
 	font-size: 15px;
    line-height: 1.6;
    text-align: center;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Work Sans', sans-serif;
      font-weight: 300;
      color:black;
      padding-left:auto;
@@ -64,74 +66,124 @@ width:80%;}
    .image2{
      display: block;
    }
-}    
+} 
+nav{
+margin: 0 auto;
+   padding:60px;
+    bottom: 0;
+/*     width: 90%; */
+max-width:100%;
+/*     text-align: center; */
+ 
+ 
+    background-color: #FFF;
+	
+  display: flex;
+  align-items: center;
+  justify-content: center
+	
+   }
+   
+nav a {
+text-decoration:none;
+color:black;
+cursor: default; 
+	
+line-height:2;
+text-transform: uppercase;
+     font-family: 'Muli', sans-serif;
+    font-size: 12px !important;
+    font-weight:bold;
+	
+white-space: nowrap;	
+/* -webkit-column-width: 150px;
+  -moz-column-width: 150px;
+  column-width: 150px; */
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+@media screen and (max-width: 300px) {
+    table td:nth-of-type(3) {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    table td:nth-of-type(4) {
+        display: none;
+    }
+}
+
 </style>
 <body>
 
 <a href="index.html">
-<img src="bnlogo.png" alt="logo" style="padding-left:25px;padding-top: 20px;left:0;top:0;
-  position:fixed;width:75px;">
+<img style="padding-left:35px;padding-top: 20px;left:0;top:0;
+  position:fixed;width:75px;" src="bnlogo.png"onmouseover="this.src='bnlogo2.png';" onmouseout="this.src='bnlogo.png';">
   </a>
 <center>
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
 
-
-<h1>Ztron is the online haven for astrology enthusiasts. There are two logotypes for this website. The first is designed to emulate the style of the 1990s. The second updates the first for a more modern look. &nbsp;
+<h1><span style="font-size:25px; letter-spacing: 5px;">ZTRON</span><br><br>
+Ztron is the online haven for astrology enthusiasts. 
+There are two logotypes for this website. The first is designed to emulate the style of the 1990s. 
+The second updates the first for a more modern look.
 </h1>
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
-<img src="oldztron.png">
-<img src="oldztron_1.jpg">
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
 
+<img class="hideme" src="oldztron.png">
+<img class="hideme" src="oldztron_1.jpg">
 
 <h1>The new logotype is lighter in weight and color to mirror more contemporary design. The moon of the old logotype is transformed into a solar eclipse, indicating the passing of time since Ztron's founding and the importance of timing in astrology.  &nbsp;
 </h1>
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> -->
-<img src="newztron.png">
-<img src="newztron.jpg">
-<br>
-<br>
-<br>
-<br>
-<br>
-<img src="newztronmac.jpg">
 
-
+<img class="hideme" src="newztron.png">
+<img class="hideme" src="newztron.jpg">
+<img class="hideme" src="newztronmac.jpg">
 </center>
+<nav>
+<div style="font-family: 'Muli', sans-serif;">
+ <a href="loacker.html">Loacker</a>
+ <a href="holy.html">Holy Schmitt's</a>
+ <a href="delicias.html">Delicias Andinas</a>
+ <a href="ghp.html">Gourmet Home Products</a>
+ <a href="trice.html">Trice</a>
+ <a href="msi.html">Mary's Secret Ingredients</a>
+ <a href="lvi.html">Life Vest Inside</a>
+ <a href="tapout.html">Tapout</a>
+ <a href="kc.html">Kelly + Chang</a>
+ <a href="andorra.html">Andorra</a>
+ <a href="ztron.html">Ztron</a>
+</div>
+</nav>
 </body>
+<script>
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var top_of_object = $(this).position().top + $(this).outerHeight();
+            var top_of_window = $(window).scrollTop() + $(window).height()*1.75;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( top_of_window > top_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+
